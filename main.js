@@ -109,3 +109,31 @@ function aFunction(e){
             blockUpdate('ironman_legs.png'); 
             console.log("t"); 
         }
+        function up(){
+            player_y=player_y-block_height;
+            console.log("block height="+block_height);
+            console.log("when up arrow key pressed, X"+player_x+"Y,"+player_y);
+            canvas.remove(player_object);
+            playerUpdate();
+        }
+        function down(){
+            player_y=player_y+block_height;
+            console.log("block height="+block_height);
+            console.log("when up arrow key pressed, X"+player_x+"Y,"+player_y);
+            canvas.remove(player_object);
+            playerUpdate();
+        }
+        function right(){
+            player_x=player_x+block_height;
+            console.log("block width="+block_width);
+            console.log("when up arrow key pressed, X"+player_x+"Y,"+player_y);
+            canvas.remove(player_object);
+            playerUpdate();
+        }
+        function left(){
+            player_x=player_x-block_height;
+            console.log("block width="+block_width);
+            console.log("when up arrow key pressed, X"+player_x+"Y,"+player_y);
+            canvas.remove(player_object);
+            playerUpdate();
+        }
